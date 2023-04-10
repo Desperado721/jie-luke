@@ -2,7 +2,7 @@ import click
 import logging
 import os
 import sys
-sys.path.append('/home/ubuntu/luke')
+sys.path.append('/home/paperspace/dev/jie-luke')
 from typing import List, Optional
 
 import torch
@@ -12,7 +12,7 @@ from transformers import AutoTokenizer
 from luke.utils.entity_vocab import EntityVocab, MASK_TOKEN, PAD_TOKEN
 
 from dataloader import create_dataloader
-from dataset import load_dataset
+from per_dataset import load_dataset
 from model import LukeForEntityDisambiguation
 
 logger = logging.getLogger(__name__)
